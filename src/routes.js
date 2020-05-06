@@ -1,7 +1,8 @@
 const routes = require("express").Router();
 
-routes.get("/", (req, res) => {
-  return res.send("hello world");
-});
+const ConsultationController = require("./controllers/ConsultationController");
+
+routes.get("/consultation", ConsultationController.index);
+routes.post("/consultation", ConsultationController.store);
 
 module.exports = routes;
