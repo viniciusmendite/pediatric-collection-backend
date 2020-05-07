@@ -4,7 +4,8 @@ const Consultation = mongoose.model("Consultation");
 
 module.exports = {
   async index(req, res) {
-    const consultation = await Consultation.find();
+    const { page = 1 } = req.query;
+    const consultation = await Consultation.paginate({}, { page, limit: 10 });
 
     return res.json(consultation);
   },
