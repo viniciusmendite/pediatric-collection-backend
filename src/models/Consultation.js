@@ -13,10 +13,6 @@ const ConsultationSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  createdAt: {
-    type: Date,
-    default: Date.now(),
-  },
   pulse: {
     type: Number,
     required: true,
@@ -27,6 +23,14 @@ const ConsultationSchema = new mongoose.Schema({
   },
   respiration: {
     type: Number,
+    required: true,
+  },
+  date: {
+    type: String,
+    required: true,
+  },
+  hour: {
+    type: String,
     required: true,
   },
 });
