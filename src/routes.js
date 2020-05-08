@@ -1,10 +1,10 @@
-const routes = require('express').Router();
-const { celebrate, Segments, Joi } = require('celebrate');
+const routes = require("express").Router();
+const { celebrate, Segments, Joi } = require("celebrate");
 
-const ConsultationController = require('./controllers/ConsultationController');
+const ConsultationController = require("./controllers/ConsultationController");
 
 routes.get(
-  '/consultation',
+  "/consultation",
   celebrate({
     [Segments.QUERY]: Joi.object().keys({
       page: Joi.number(),
@@ -13,10 +13,10 @@ routes.get(
   ConsultationController.index
 );
 
-routes.get('/consultation/:id', ConsultationController.show);
+routes.get("/consultation/:id", ConsultationController.show);
 
 routes.post(
-  '/consultation',
+  "/consultation",
   celebrate({
     [Segments.BODY]: Joi.object().keys({
       patient: Joi.string().required(),
@@ -37,8 +37,8 @@ routes.post(
   ConsultationController.store
 );
 
-routes.put('/consultation/:id', ConsultationController.update);
+routes.put("/consultation/:id", ConsultationController.update);
 
-routes.delete('/consultation/:id', ConsultationController.delete);
+routes.delete("/consultation/:id", ConsultationController.delete);
 
 module.exports = routes;

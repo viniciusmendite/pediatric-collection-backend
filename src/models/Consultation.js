@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const mongoosePaginate = require('mongoose-paginate');
+const mongoose = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate");
 
 const ConsultationSchema = new mongoose.Schema({
   patient: {
@@ -49,4 +49,4 @@ const ConsultationSchema = new mongoose.Schema({
 
 ConsultationSchema.plugin(mongoosePaginate);
 
-mongoose.model('Consultation', ConsultationSchema);
+mongoose.model("Consultation", ConsultationSchema);
