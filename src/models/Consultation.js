@@ -1,11 +1,7 @@
-const mongoose = require("mongoose");
-const mongoosePaginate = require("mongoose-paginate");
+const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 
 const ConsultationSchema = new mongoose.Schema({
-  doctor: {
-    type: String,
-    required: true,
-  },
   patient: {
     type: String,
     required: true,
@@ -16,14 +12,30 @@ const ConsultationSchema = new mongoose.Schema({
   },
   pulse: {
     type: Number,
-    required: true,
   },
   saturation: {
     type: Number,
-    required: true,
   },
   respiration: {
     type: Number,
+  },
+  pressure: {
+    type: String,
+  },
+  address: {
+    type: String,
+  },
+  neighborhood: {
+    type: String,
+  },
+  city: {
+    type: String,
+  },
+  telephone: {
+    type: String,
+  },
+  medic: {
+    type: String,
     required: true,
   },
   date: {
@@ -32,10 +44,9 @@ const ConsultationSchema = new mongoose.Schema({
   },
   hour: {
     type: String,
-    required: true,
   },
 });
 
 ConsultationSchema.plugin(mongoosePaginate);
 
-mongoose.model("Consultation", ConsultationSchema);
+mongoose.model('Consultation', ConsultationSchema);
