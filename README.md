@@ -32,7 +32,7 @@
       "hour": "17:23"
     }
 
-<div style="text-align: justify">&emsp; Para garantir a inserção corretas dos dados, fiz a validação dos campos utilizando a biblioteca <b>Celebrate</b>.</div>
+<div style="text-align: justify">&emsp; Para garantir a inserção correta dos dados, fiz a validação dos campos utilizando a biblioteca <b>Celebrate</b>.</div>
 
     routes.post(
       "/consultation",
