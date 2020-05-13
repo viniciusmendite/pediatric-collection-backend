@@ -4,20 +4,18 @@ const mongoosePaginate = require("mongoose-paginate");
 const ConsultationSchema = new mongoose.Schema({
   patient: {
     type: String,
-    required: true,
   },
   responsible: {
     type: String,
-    required: true,
   },
   pulse: {
-    type: Number,
+    type: String,
   },
   saturation: {
-    type: Number,
+    type: String,
   },
   respiration: {
-    type: Number,
+    type: String,
   },
   pressure: {
     type: String,
@@ -36,11 +34,9 @@ const ConsultationSchema = new mongoose.Schema({
   },
   medic: {
     type: String,
-    required: true,
   },
   date: {
     type: String,
-    required: true,
   },
   hour: {
     type: String,
