@@ -34,27 +34,27 @@
 
 <div style="text-align: justify">&emsp; Para garantir a inserção correta dos dados, fiz a validação dos campos utilizando a biblioteca <b>Celebrate</b>.</div>
 
-routes.post(
-"/consultation",
-celebrate({
-[Segments.BODY]: Joi.object().keys({
-patient: Joi.string(),
-responsible: Joi.string(),
-pulse: Joi.string(),
-saturation: Joi.string(),
-respiration: Joi.string(),
-pressure: Joi.string(),
-address: Joi.string(),
-neighborhood: Joi.string(),
-city: Joi.string(),
-telephone: Joi.string(),
-medic: Joi.string(),
-date: Joi.string(),
-hour: Joi.string(),
-}),
-}),
-ConsultationController.store
-);
+    routes.post(
+    "/consultation",
+    celebrate({
+    [Segments.BODY]: Joi.object().keys({
+    patient: Joi.string(),
+    responsible: Joi.string(),
+    pulse: Joi.string(),
+    saturation: Joi.string(),
+    respiration: Joi.string(),
+    pressure: Joi.string(),
+    address: Joi.string(),
+    neighborhood: Joi.string(),
+    city: Joi.string(),
+    telephone: Joi.string(),
+    medic: Joi.string(),
+    date: Joi.string(),
+    hour: Joi.string(),
+    }),
+    }),
+    ConsultationController.store
+    );
 
   <div style="text-align: justify">&emsp; E não menos importante, para fazer a chamada de rotas durante o desenvolvimento utilizei o <b>Insomnia</b>.</div>
 
