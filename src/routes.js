@@ -19,8 +19,8 @@ routes.post(
   "/consultation",
   celebrate({
     [Segments.BODY]: Joi.object().keys({
-      patient: Joi.string().required(),
-      responsible: Joi.string().required(),
+      patient: Joi.string(),
+      responsible: Joi.string(),
       pulse: Joi.number(),
       saturation: Joi.number(),
       respiration: Joi.number(),
@@ -29,8 +29,8 @@ routes.post(
       neighborhood: Joi.string(),
       city: Joi.string(),
       telephone: Joi.string(),
-      medic: Joi.string().required(),
-      date: Joi.string().required(),
+      medic: Joi.string(),
+      date: Joi.string(),
       hour: Joi.string(),
     }),
   }),

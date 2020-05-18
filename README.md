@@ -32,14 +32,14 @@
       "hour": "17:23"
     }
 
-<div style="text-align: justify">&emsp; Para garantir a inserção corretas dos dados, fiz a validação dos campos utilizando a biblioteca <b>Celebrate</b>.</div>
+<div style="text-align: justify">&emsp; Para garantir a inserção correta dos dados, fiz a validação dos campos utilizando a biblioteca <b>Celebrate</b>.</div>
 
     routes.post(
       "/consultation",
       celebrate({
         [Segments.BODY]: Joi.object().keys({
-          patient: Joi.string().required(),
-          responsible: Joi.string().required(),
+          patient: Joi.string(),
+          responsible: Joi.string(),
           pulse: Joi.number(),
           saturation: Joi.number(),
           respiration: Joi.number(),
@@ -48,8 +48,8 @@
           neighborhood: Joi.string(),
           city: Joi.string(),
           telephone: Joi.string(),
-          medic: Joi.string().required(),
-          date: Joi.string().required(),
+          medic: Joi.string(),
+          date: Joi.string(),
           hour: Joi.string(),
         }),
       }),
