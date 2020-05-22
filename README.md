@@ -1,8 +1,10 @@
 ## Pediatric Collection: Back-end
 
-<div style="text-align: justify">&emsp; Estou desenvolvendo este projeto como voluntário para uma turma de faculdade de enfermagem. O sistema consiste em armazenar algumas informações clínicas, como dados do paciente, contato e nome do médico.</div><br/>
+<div style="text-align: justify">&emsp; Desenvolvi este projeto como voluntário para uma turma de faculdade de enfermagem. O sistema consiste em armazenar algumas informações clínicas, como dados do paciente, contato e nome do médico.</div><br/>
 
-<div style="text-align: justify">&emsp; Para esse projeto fiz toda parte programática, o <b>back-end (feito em NodeJS)</b> e o <b>mobile (feito em React Native, ainda em produção)</b>.</div><br/>
+<div style="text-align: justify">&emsp; Para esse projeto fiz toda parte programática, o <b>back-end (feito em NodeJS)</b> e o <b>mobile (feito em React Native)</b>.<br/>
+&emsp; Repositório do mobile: [Back-end](https://github.com/viniciusmendite/pediatric-collection-mobile)
+</div><br/>
 
 <div style="text-align: justify">&emsp; Neste sistema utilizei o banco de dados <b>MongoDB</b>.</div>
 
