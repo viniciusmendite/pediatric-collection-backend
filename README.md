@@ -4,7 +4,7 @@
 
 <div style="text-align: justify">&emsp; Para esse projeto fiz toda parte programática, o <b>back-end (feito em NodeJS)</b> e o <b>mobile (feito em React Native)</b>.</div><br/>
 
-&emsp; Repositório do mobile: [Back-end](https://github.com/viniciusmendite/pediatric-collection-mobile)
+&emsp; Repositório do mobile: [Mobile](https://github.com/viniciusmendite/pediatric-collection-mobile)
 
 <div style="text-align: justify">&emsp; Neste sistema utilizei o banco de dados <b>MongoDB</b>.</div>
 
